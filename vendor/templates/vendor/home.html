@@ -1,0 +1,16 @@
+{% extends 'vendor/base.html'%} {% block content %}
+<section id="reservation">
+
+
+    <div class="container" id="hope">
+
+        <form method="POST" action="{% url 'book' %}" enctype="multipart/form-data">
+
+            {% csrf_token %} {{form.as_p}}
+            <input type="submit" class="btn btn-primary " value="book your table">
+
+        </form>
+
+    </div>
+</section>
+{% endblock content %}

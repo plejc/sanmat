@@ -1,0 +1,11 @@
+<h1>All vendor:</h1>
+{% for vendor in object_list %}
+<ul>
+    <li>first_name:{{vendor.first_name}}</li>
+    <li>last_name:{{vendor.last_name}}</li>
+    <li>Email:{{vendor.email_address}}</li>
+    <li>Confirm:{{vendor.confirm_email}}</li>
+    <li>Password:{{vendor.password}}</li>
+    <li>Confirm Password:{{vendor.confirm_password}}</li>
+</ul>
+{% endfor %}
